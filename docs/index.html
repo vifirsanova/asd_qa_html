@@ -40,10 +40,10 @@
               <div class="control has-icons-left">
                 <div class="select is-fullwidth">
                   <select id="run_name">
-                    <option value="romans">Система 1</option>
-                    <option value="macron">Система 2</option>
-                    <option value="debats">Система 3</option>
-                    <option value="films">Система 4</option>
+                    <option value="sys1">Система 1</option>
+                    <option value="sys2">Система 2</option>
+                    <option value="sys3">Система 3</option>
+                    <option value="sys4">Система 4</option>
                   </select>
                 </div>
                 <div class="icon is-small is-left">
@@ -58,7 +58,7 @@
               <div class="control">
                 <textarea id="prefix" class="textarea" type="text" rows="2"></textarea>
               </div>
-              <p class="help">Задайте вопрос системе. <em>(Максимальное количество символов: 500)</em></p>
+              <p class="help">Задайте вопрос системе <em>(Максимальное количество символов: 500)</em></p>
             </div>
 
             <div class="field">
@@ -74,7 +74,7 @@
               <div class="control">
                 <input id="temperature" class="input" type="text" placeholder="0.9" value="0.9">
               </div>
-              <p class="help">Настройте креативность модели.<em>(Оптимальные настройки: 0.7 - 0.9)</em></p>
+              <p class="help">Настройте креативность модели <em>(Оптимальные настройки: 0.7 - 0.9)</em></p>
             </div>
 
             <div class="buttons">
@@ -125,14 +125,14 @@
 
 <script type="text/javascript">
   var placeholderText = {
-      "Livres français": "",
-      "Tweets d'Emmanuel Macron": "",
-      "Débats parlementaires": "",
-      "Scripts de films français": ""
+      "sys1": "",
+      "sys2": "",
+      "sys3": "",
+      "sys4": ""
   };
 
   // pick the book placeholder by default at load
-  $("#prefix").val(placeholderText["Livres français"]);
+  $("#prefix").val(placeholderText["Текст"]);
 
   // change the repplique placeholder when using the dropmenu
   $("#run_name").on("change", function () {
